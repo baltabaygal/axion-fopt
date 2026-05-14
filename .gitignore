@@ -1,0 +1,31 @@
+# Generated plots
+*.png
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Numba cache
+__numba_cache__/
+
+# Simulation outputs
+sweep_results/
+serial_theta_sweep_results*/
+simulation_progress.log
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.DS_Store
+.vscode/
+.idea/

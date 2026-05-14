@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xi-model"
+version = "0.1.0"
+description = "Compact xi inference package for the accepted STD_FANH paper model"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["xi_model*"]
