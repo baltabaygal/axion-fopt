@@ -46,17 +46,10 @@ def main() -> None:
 
         for theta0, color in zip(thetas, colors):
             xi = []
-            xi_lo = []
-            xi_hi = []
             for beta_over_h in beta_grid:
                 res = model.predict(hstar=hstar, vw=vw, theta0=theta0, beta_over_h=float(beta_over_h), clip=False)
                 xi.append(res.xi)
-                xi_lo.append(res.xi_lo)
-                xi_hi.append(res.xi_hi)
             xi = np.array(xi)
-            xi_lo = np.array(xi_lo)
-            xi_hi = np.array(xi_hi)
-            ax.fill_between(beta_grid, xi_lo, xi_hi, color=color, alpha=0.18, linewidth=0)
             ax.plot(
                 beta_grid,
                 xi,

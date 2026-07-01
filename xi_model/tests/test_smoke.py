@@ -1,47 +1,44 @@
-from xi_model import load_default_model
+"""Smoke tests for the xi_paper reference model."""
+import math
+
+from xi_model import PredictResult, load_default_model
 
 
-def test_smoke_prediction() -> None:
+def test_predict_returns_sensible_result() -> None:
     model = load_default_model()
-    result = model.predict(hstar=0.2, vw=0.5, theta0=1.308997, beta_over_h=10.0)
-    assert result.xi > 0.0
-    assert result.xi_hi >= result.xi
-    assert result.xi_lo <= result.xi
-    assert result.xi_dm_mode == "broken_powerlaw_ftilde"
-    assert result.prediction_status == "validated"
-    assert result.status_flags == []
-    assert model.xi_dm_grid_source == "xi_dm_broken_powerlaw"
+    res = model.predict(hstar=0.2, vw=0.5, theta0=1.2, beta_over_h=6.0)
+    assert isinstance(res, PredictResult)
+    assert res.xi > 0.0
+    assert res.xi_dm > 0.0
+    assert 0.0 < res.f_bm < 1.0
+    assert res.g_bm >= 0.0
+    assert res.rc_mean > 0.0
+    assert res.tp > 0.0
+    assert set(res.to_dict()) >= {"xi", "xi_dm", "f_bm", "g_bm", "rc_mean", "kappa", "tp"}
 
 
-def test_low_hstar_plateau_policy() -> None:
+def test_xi_floor_and_high_hstar_limit() -> None:
     model = load_default_model()
-    result = model.predict(hstar=0.003, vw=0.5, theta0=1.2, beta_over_h=6.0, clip=True)
-    ref = model.predict(hstar=0.05, vw=0.5, theta0=1.2, beta_over_h=6.0, clip=True)
-    assert result.kappa_plateau_applied is True
-    assert result.kappa_plateau_hstar > result.clipped_inputs["hstar"]
-    assert result.geometry_vw == 0.5
-    assert result.geometry_hstar == min(model.geom_h_grid)
-    assert result.tp > ref.tp
-    assert result.prediction_status == "continued"
-    assert "continued_low_h_kappa_plateau" in result.status_flags
-    assert "continued_low_h_geometry_boundary" in result.status_flags
-    assert any("kappa_pilot frozen to low-H plateau" in w for w in result.warnings)
+    # For H_* >> M_phi the transition finishes long before oscillation: xi -> ~1.
+    res = model.predict(hstar=5.0, vw=0.5, theta0=1.2, beta_over_h=6.0)
+    assert res.xi >= 1.0
+    assert res.xi < 2.0
 
 
-def test_high_hstar_geometry_boundary_policy() -> None:
+def test_xi_enhances_and_decreases_with_hstar() -> None:
     model = load_default_model()
-    result = model.predict(hstar=3.0, vw=0.5, theta0=1.2, beta_over_h=6.0, clip=False)
-    assert result.geometry_hstar == max(model.geom_h_grid)
-    assert result.prediction_status == "continued"
-    assert "continued_high_h_geometry_boundary" in result.status_flags
-    assert any("geometry evaluated at high-H boundary" in w for w in result.warnings)
+    xs = [model.predict(hstar=h, vw=0.7, theta0=1.0, beta_over_h=4.0).xi
+          for h in (1e-3, 1e-2, 1e-1, 1.0)]
+    # enhancement grows as the transition happens later (lower H_*)
+    assert all(a > b for a, b in zip(xs, xs[1:]))
+    assert xs[0] > 10.0
 
 
-def test_vw_extrapolation_to_one_uses_geometry_support() -> None:
+def test_low_hstar_bubble_misalignment_slope() -> None:
+    # In the deep low-H_* (bubble-misalignment) regime xi ~ (H_*/M_phi)^{-1/2}.
     model = load_default_model()
-    result = model.predict(hstar=0.05, vw=1.0, theta0=1.2, beta_over_h=6.0, clip=True)
-    assert result.geometry_vw == 1.0
-    assert result.clipped_inputs["vw"] == 1.0
-    assert result.xi > 0.0
-    assert result.prediction_status in {"continued", "validated_with_generated_geometry"}
-    assert "continued_outside_fit_domain" in result.status_flags
+    h1, h2 = 1e-6, 1e-5
+    x1 = model.predict(hstar=h1, vw=0.7, theta0=0.1, beta_over_h=4.0).xi
+    x2 = model.predict(hstar=h2, vw=0.7, theta0=0.1, beta_over_h=4.0).xi
+    slope = math.log(x1 / x2) / math.log(h1 / h2)
+    assert abs(slope - (-0.5)) < 0.05

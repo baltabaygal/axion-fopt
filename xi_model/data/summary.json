@@ -1,41 +1,37 @@
 {
-  "variant": "broken_powerlaw_82b_lamtheta",
-  "lambda_mode": "x",
-  "model": "xi_pred = xi_dm_bpl[(1-f_BM)^lambda(theta) + A0(theta)*vw^p*f_BM*G_BM], q=2, kappa=s(vw)*pilot_kappa",
-  "xi_dm_mode": "broken_powerlaw_ftilde",
-  "fanh_summary_file": "paper_codes/ode_plots/effective_ftilde_by_vw_summary.json",
-  "fanh_vw_laws": {
-    "C(vw)": "C0 * vw^p",
-    "r(vw)": "r0 + r1 * vw"
+  "variant": "xi_paper",
+  "model": "xi = xi_dm*[(1-eps_BM)^lambda + A0*(gamma_w*vw)^p_mink*(a_p/a_*)^-2*G_BM]; xi_dm=[1+(C0*Finf/Fanh*tau^1.5)^r]^{1/r}, r=r0+r1*vw, tau=(2/3)t_p; kappa=s*vw*kappa_pilot^q_k",
+  "reference": "manuscript Eq. (ratio_fit); global fit to lattice sims, log-RMSE ~10%",
+  "xi_dm": {
+    "C0": 2.055654899236512,
+    "r0": 0.7505936356327543,
+    "r1": 0.2931769868195087,
+    "a": 1.5,
+    "xi_floor": 1.0
   },
-  "overall_rel_rmse": 0.10355713767928362,
-  "s_by_vw": {
-    "0.3": 0.1297397878886659,
-    "0.5": 0.17721569422477954,
-    "0.7": 0.2500414256406645,
-    "0.9": 0.37230612488506104
+  "lambda": 2.271113614899216,
+  "A0": 0.11696682841105574,
+  "velocity": {
+    "p_mink": 0.604,
+    "form": "(gamma_w*vw)^p_mink / (1+(sqrt3/2)*H*Rc/vw)^2"
   },
-  "p": 3.2461426726972884,
-  "q": 2.0,
-  "A0_theta": {
-    "0.261799": 0.0675060279166707,
-    "0.785398": 0.2208123085663919,
-    "1.308997": 0.6833103890463863,
-    "1.832596": 1.054589382258309,
-    "2.356194": 1.5819170157989622,
-    "2.879793": 2.1664480046355505
+  "kappa": {
+    "s": 0.6950809047707429,
+    "q_k": 0.7166408687279807,
+    "analytic_eps": 2.23299,
+    "form": "kappa = s*vw*kappa_pilot_analytic^q_k"
   },
-  "A0_theta_monotone": true,
-  "by_theta_rmse": {
-    "0.261799": 0.09663364890963048,
-    "0.785398": 0.07527740035247045,
-    "1.308997": 0.0805669382528323,
-    "1.832596": 0.08673376792665258,
-    "2.356194": 0.08829902196258506,
-    "2.879793": 0.1659193785029391
+  "fanh": {
+    "eps0": 2.720719542376229,
+    "alpha0": 1.273071620930409
   },
-  "lambda_law": {
-    "A": 1.5564301454941902,
-    "gamma": 0.39017964970521263
+  "finf": {
+    "eps_inf": 1.736643,
+    "alpha_inf": -0.462016
+  },
+  "fit": {
+    "rmse_log": 0.1040703120025648,
+    "N": 1991,
+    "geom_convention": "G_BM"
   }
 }
