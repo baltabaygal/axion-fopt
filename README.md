@@ -1,6 +1,6 @@
 # Paper code
 
-Code accompanying [*paper citation*].
+Code accompanying [*Axion Misalignment Across First-Order Phase Transitions*](https://arxiv.org/abs/2607.01333).
 
 This repository contains two independent packages:
 
@@ -59,4 +59,4 @@ python -m xi_model --hstar 0.7 --vw 0.6 --theta0 1.0 --betaH 8.0 --pretty
 
 ## Citation
 
-If you use this code, please cite [*paper*].
+If you use this code, please cite [*Axion Misalignment Across First-Order Phase Transitions*](https://arxiv.org/abs/2607.01333).
