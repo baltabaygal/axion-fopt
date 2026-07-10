@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="24" text-anchor="middle" font-size="22" font-family="Arial">xi vs beta/H*</text>
+<line x1="90" y1="520.00" x2="860" y2="520.00" stroke="#e6e6e6"/>
+<text x="78" y="524.00" text-anchor="end" font-size="12" font-family="Arial">16.1</text>
+<line x1="90" y1="424.00" x2="860" y2="424.00" stroke="#e6e6e6"/>
+<text x="78" y="428.00" text-anchor="end" font-size="12" font-family="Arial">31.0</text>
+<line x1="90" y1="328.00" x2="860" y2="328.00" stroke="#e6e6e6"/>
+<text x="78" y="332.00" text-anchor="end" font-size="12" font-family="Arial">45.9</text>
+<line x1="90" y1="232.00" x2="860" y2="232.00" stroke="#e6e6e6"/>
+<text x="78" y="236.00" text-anchor="end" font-size="12" font-family="Arial">60.7</text>
+<line x1="90" y1="136.00" x2="860" y2="136.00" stroke="#e6e6e6"/>
+<text x="78" y="140.00" text-anchor="end" font-size="12" font-family="Arial">75.6</text>
+<line x1="90" y1="40.00" x2="860" y2="40.00" stroke="#e6e6e6"/>
+<text x="78" y="44.00" text-anchor="end" font-size="12" font-family="Arial">90.5</text>
+<line x1="90.00" y1="40" x2="90.00" y2="520" stroke="#f0f0f0"/>
+<text x="90.00" y="542" text-anchor="middle" font-size="12" font-family="Arial">4</text>
+<line x1="282.50" y1="40" x2="282.50" y2="520" stroke="#f0f0f0"/>
+<text x="282.50" y="542" text-anchor="middle" font-size="12" font-family="Arial">8</text>
+<line x1="378.75" y1="40" x2="378.75" y2="520" stroke="#f0f0f0"/>
+<text x="378.75" y="542" text-anchor="middle" font-size="12" font-family="Arial">10</text>
+<line x1="860.00" y1="40" x2="860.00" y2="520" stroke="#f0f0f0"/>
+<text x="860.00" y="542" text-anchor="middle" font-size="12" font-family="Arial">20</text>
+<line x1="90" y1="520" x2="860" y2="520" stroke="black"/>
+<line x1="90" y1="40" x2="90" y2="520" stroke="black"/>
+<text x="475.00" y="576" text-anchor="middle" font-size="16" font-family="Arial">beta/H*</text>
+<text x="24" y="280.00" transform="rotate(-90,24,280.00)" text-anchor="middle" font-size="16" font-family="Arial">xi (mean_ratio)</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="90.00,446.29 282.50,363.60 378.75,354.29 860.00,211.62"/>
+<line x1="90.00" y1="486.90" x2="90.00" y2="405.68" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="84.00" y1="486.90" x2="96.00" y2="486.90" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="84.00" y1="405.68" x2="96.00" y2="405.68" stroke="#1f77b4" stroke-width="1.8"/>
+<circle cx="90.00" cy="446.29" r="4" fill="#1f77b4"/>
+<line x1="282.50" y1="386.76" x2="282.50" y2="340.43" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="276.50" y1="386.76" x2="288.50" y2="386.76" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="276.50" y1="340.43" x2="288.50" y2="340.43" stroke="#1f77b4" stroke-width="1.8"/>
+<circle cx="282.50" cy="363.60" r="4" fill="#1f77b4"/>
+<line x1="378.75" y1="388.37" x2="378.75" y2="320.21" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="372.75" y1="388.37" x2="384.75" y2="388.37" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="372.75" y1="320.21" x2="384.75" y2="320.21" stroke="#1f77b4" stroke-width="1.8"/>
+<circle cx="378.75" cy="354.29" r="4" fill="#1f77b4"/>
+<line x1="860.00" y1="228.60" x2="860.00" y2="194.63" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="854.00" y1="228.60" x2="866.00" y2="228.60" stroke="#1f77b4" stroke-width="1.8"/>
+<line x1="854.00" y1="194.63" x2="866.00" y2="194.63" stroke="#1f77b4" stroke-width="1.8"/>
+<circle cx="860.00" cy="211.62" r="4" fill="#1f77b4"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2.5" points="90.00,292.73 282.50,188.14 378.75,261.80 860.00,81.76"/>
+<line x1="90.00" y1="353.14" x2="90.00" y2="232.32" stroke="#d62728" stroke-width="1.8"/>
+<line x1="84.00" y1="353.14" x2="96.00" y2="353.14" stroke="#d62728" stroke-width="1.8"/>
+<line x1="84.00" y1="232.32" x2="96.00" y2="232.32" stroke="#d62728" stroke-width="1.8"/>
+<circle cx="90.00" cy="292.73" r="4" fill="#d62728"/>
+<line x1="282.50" y1="234.50" x2="282.50" y2="141.78" stroke="#d62728" stroke-width="1.8"/>
+<line x1="276.50" y1="234.50" x2="288.50" y2="234.50" stroke="#d62728" stroke-width="1.8"/>
+<line x1="276.50" y1="141.78" x2="288.50" y2="141.78" stroke="#d62728" stroke-width="1.8"/>
+<circle cx="282.50" cy="188.14" r="4" fill="#d62728"/>
+<line x1="378.75" y1="407.75" x2="378.75" y2="115.84" stroke="#d62728" stroke-width="1.8"/>
+<line x1="372.75" y1="407.75" x2="384.75" y2="407.75" stroke="#d62728" stroke-width="1.8"/>
+<line x1="372.75" y1="115.84" x2="384.75" y2="115.84" stroke="#d62728" stroke-width="1.8"/>
+<circle cx="378.75" cy="261.80" r="4" fill="#d62728"/>
+<line x1="860.00" y1="90.41" x2="860.00" y2="73.10" stroke="#d62728" stroke-width="1.8"/>
+<line x1="854.00" y1="90.41" x2="866.00" y2="90.41" stroke="#d62728" stroke-width="1.8"/>
+<line x1="854.00" y1="73.10" x2="866.00" y2="73.10" stroke="#d62728" stroke-width="1.8"/>
+<circle cx="860.00" cy="81.76" r="4" fill="#d62728"/>
+<rect x="678" y="46" width="170" height="62" fill="white" stroke="#cccccc"/>
+<line x1="690" y1="70" x2="718" y2="70" stroke="#1f77b4" stroke-width="2.5"/>
+<circle cx="704" cy="70" r="4" fill="#1f77b4"/>
+<text x="728" y="74" font-size="13" font-family="Arial">v_w=0.5</text>
+<line x1="690" y1="96" x2="718" y2="96" stroke="#d62728" stroke-width="2.5"/>
+<circle cx="704" cy="96" r="4" fill="#d62728"/>
+<text x="728" y="100" font-size="13" font-family="Arial">v_w=0.9</text>
+</svg>

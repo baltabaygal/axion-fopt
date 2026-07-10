@@ -1,0 +1,245 @@
+{
+  "config": {
+    "potential": "cosine",
+    "H_PT": 0.05,
+    "beta_over_H": 20.0,
+    "beta": 1.0,
+    "v_bubble": 0.8,
+    "Ngrid": 64,
+    "num_tracers": 100000,
+    "end_time": 1000.0,
+    "n_theta": 5,
+    "n_realizations": 5,
+    "theta_values": [
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966,
+      2.356194490192345,
+      3.141592653589793
+    ]
+  },
+  "per_run": [
+    {
+      "theta0": 0.0,
+      "realization": 0,
+      "final_total_energy": 0.0,
+      "num_bubbles": 3477,
+      "wall_seconds": 49.666926665988285
+    },
+    {
+      "theta0": 0.0,
+      "realization": 1,
+      "final_total_energy": 0.0,
+      "num_bubbles": 3673,
+      "wall_seconds": 49.92892862499866
+    },
+    {
+      "theta0": 0.0,
+      "realization": 2,
+      "final_total_energy": 0.0,
+      "num_bubbles": 3932,
+      "wall_seconds": 50.73538004200964
+    },
+    {
+      "theta0": 0.0,
+      "realization": 3,
+      "final_total_energy": 0.0,
+      "num_bubbles": 3678,
+      "wall_seconds": 50.44069033299456
+    },
+    {
+      "theta0": 0.0,
+      "realization": 4,
+      "final_total_energy": 0.0,
+      "num_bubbles": 3794,
+      "wall_seconds": 50.88435125000251
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 0,
+      "final_total_energy": 0.00047714459492043435,
+      "num_bubbles": 3477,
+      "wall_seconds": 49.201065500004916
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 1,
+      "final_total_energy": 0.0004871899913958173,
+      "num_bubbles": 3673,
+      "wall_seconds": 52.78121975000249
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 2,
+      "final_total_energy": 0.0005014498458227829,
+      "num_bubbles": 3932,
+      "wall_seconds": 52.26505170800374
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 3,
+      "final_total_energy": 0.0004989640111068721,
+      "num_bubbles": 3678,
+      "wall_seconds": 51.0617404999939
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 4,
+      "final_total_energy": 0.0004891954987655709,
+      "num_bubbles": 3794,
+      "wall_seconds": 52.39114783400146
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 0,
+      "final_total_energy": 0.001602291715016617,
+      "num_bubbles": 3477,
+      "wall_seconds": 52.43581474998791
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 1,
+      "final_total_energy": 0.0016264429462360661,
+      "num_bubbles": 3673,
+      "wall_seconds": 50.474622083012946
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 2,
+      "final_total_energy": 0.0016506398032454907,
+      "num_bubbles": 3932,
+      "wall_seconds": 47.497697665996384
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 3,
+      "final_total_energy": 0.001659028615433949,
+      "num_bubbles": 3678,
+      "wall_seconds": 46.000353249997715
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 4,
+      "final_total_energy": 0.0016279465760299123,
+      "num_bubbles": 3794,
+      "wall_seconds": 45.53592291599489
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 0,
+      "final_total_energy": 0.00304237779043107,
+      "num_bubbles": 3477,
+      "wall_seconds": 44.179440082996734
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 1,
+      "final_total_energy": 0.0030792442866323915,
+      "num_bubbles": 3673,
+      "wall_seconds": 46.24207712500356
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 2,
+      "final_total_energy": 0.0030651750791485183,
+      "num_bubbles": 3932,
+      "wall_seconds": 45.824252083999454
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 3,
+      "final_total_energy": 0.003148018303882135,
+      "num_bubbles": 3678,
+      "wall_seconds": 47.928985416991054
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 4,
+      "final_total_energy": 0.0030799876208198115,
+      "num_bubbles": 3794,
+      "wall_seconds": 52.96012358300504
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 0,
+      "final_total_energy": 0.00847928202397075,
+      "num_bubbles": 3477,
+      "wall_seconds": 52.37402133300202
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 1,
+      "final_total_energy": 0.008594438995378973,
+      "num_bubbles": 3673,
+      "wall_seconds": 50.244481832996826
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 2,
+      "final_total_energy": 0.008628002220733285,
+      "num_bubbles": 3932,
+      "wall_seconds": 50.814761707995785
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 3,
+      "final_total_energy": 0.008656126483040105,
+      "num_bubbles": 3678,
+      "wall_seconds": 49.56346395800938
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 4,
+      "final_total_energy": 0.008715741625262945,
+      "num_bubbles": 3794,
+      "wall_seconds": 49.15562483298709
+    }
+  ],
+  "per_theta_summary": [
+    {
+      "theta0": 0.0,
+      "rho_PT_mean": 0.0,
+      "rho_PT_std": 0.0,
+      "rho_noPT": 0.0,
+      "mean_ratio": NaN,
+      "std_ratio": NaN,
+      "N_samples": 5
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "rho_PT_mean": 0.0004907887884022955,
+      "rho_PT_std": 8.74238341784603e-06,
+      "rho_noPT": 7.507977425120774e-06,
+      "mean_ratio": 65.36897497322998,
+      "std_ratio": 1.1644125871496485,
+      "N_samples": 5
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "rho_PT_mean": 0.0016332699311924072,
+      "rho_PT_std": 1.9999089880342575e-05,
+      "rho_noPT": 3.5500826779752987e-05,
+      "mean_ratio": 46.00653222318478,
+      "std_ratio": 0.5633415245345363,
+      "N_samples": 5
+    },
+    {
+      "theta0": 2.356194490192345,
+      "rho_PT_mean": 0.0030829606161827854,
+      "rho_PT_std": 3.5265971159555107e-05,
+      "rho_noPT": 0.00011739670997485523,
+      "mean_ratio": 26.261047833820157,
+      "std_ratio": 0.30039999559705355,
+      "N_samples": 5
+    },
+    {
+      "theta0": 3.141592653589793,
+      "rho_PT_mean": 0.008614718269677211,
+      "rho_PT_std": 7.855068106705719e-05,
+      "rho_noPT": 0.008938110768795013,
+      "mean_ratio": 0.9638186964244347,
+      "std_ratio": 0.008788286820218805,
+      "N_samples": 5
+    }
+  ]
+}

@@ -29,3 +29,6 @@ simulation_progress.log
 .DS_Store
 .vscode/
 .idea/
+
+# Miscellaneous
+CLAUDE.md

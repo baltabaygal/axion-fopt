@@ -1,0 +1,304 @@
+{
+  "config": {
+    "H_PT": 0.05,
+    "beta_over_H": 20.0,
+    "beta": 1.0,
+    "v_bubble": 0.8,
+    "Ngrid": 64,
+    "num_tracers": 100000,
+    "end_time": 1000.0,
+    "n_theta": 5,
+    "n_realizations": 5,
+    "theta_values": [
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966,
+      2.356194490192345,
+      3.141592653589793
+    ]
+  },
+  "per_run": [
+    {
+      "theta0": 0.0,
+      "realization": 0,
+      "final_total_energy": 0.0,
+      "final_kinetic_energy": 0.0,
+      "final_gradient_energy": 0.0,
+      "final_potential_energy": 0.0,
+      "num_bubbles": 3477,
+      "wall_seconds": 49.965886833990226
+    },
+    {
+      "theta0": 0.0,
+      "realization": 1,
+      "final_total_energy": 0.0,
+      "final_kinetic_energy": 0.0,
+      "final_gradient_energy": 0.0,
+      "final_potential_energy": 0.0,
+      "num_bubbles": 3673,
+      "wall_seconds": 46.210934125003405
+    },
+    {
+      "theta0": 0.0,
+      "realization": 2,
+      "final_total_energy": 0.0,
+      "final_kinetic_energy": 0.0,
+      "final_gradient_energy": 0.0,
+      "final_potential_energy": 0.0,
+      "num_bubbles": 3932,
+      "wall_seconds": 46.09930191599415
+    },
+    {
+      "theta0": 0.0,
+      "realization": 3,
+      "final_total_energy": 0.0,
+      "final_kinetic_energy": 0.0,
+      "final_gradient_energy": 0.0,
+      "final_potential_energy": 0.0,
+      "num_bubbles": 3678,
+      "wall_seconds": 45.402599249995546
+    },
+    {
+      "theta0": 0.0,
+      "realization": 4,
+      "final_total_energy": 0.0,
+      "final_kinetic_energy": 0.0,
+      "final_gradient_energy": 0.0,
+      "final_potential_energy": 0.0,
+      "num_bubbles": 3794,
+      "wall_seconds": 44.76635916699888
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 0,
+      "final_total_energy": 0.0004775908591628939,
+      "final_kinetic_energy": 0.0001934724717838998,
+      "final_gradient_energy": 2.746087235622711e-06,
+      "final_potential_energy": 0.00028137230014337137,
+      "num_bubbles": 3477,
+      "wall_seconds": 43.45732450000651
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 1,
+      "final_total_energy": 0.0004875784055173024,
+      "final_kinetic_energy": 0.0002226990670649425,
+      "final_gradient_energy": 2.701277854566776e-06,
+      "final_potential_energy": 0.0002621780605977931,
+      "num_bubbles": 3673,
+      "wall_seconds": 42.67440233301022
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 2,
+      "final_total_energy": 0.0005010860897740545,
+      "final_kinetic_energy": 0.00025332519132873524,
+      "final_gradient_energy": 2.7040282943181407e-06,
+      "final_potential_energy": 0.0002450568701510011,
+      "num_bubbles": 3932,
+      "wall_seconds": 43.42031320800015
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 3,
+      "final_total_energy": 0.0004996630157975,
+      "final_kinetic_energy": 0.00021765428790957838,
+      "final_gradient_energy": 2.7856844393892903e-06,
+      "final_potential_energy": 0.0002792230434485323,
+      "num_bubbles": 3678,
+      "wall_seconds": 42.27990758299711
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "realization": 4,
+      "final_total_energy": 0.0004895924158988491,
+      "final_kinetic_energy": 0.00023217859969155264,
+      "final_gradient_energy": 2.6793399971491312e-06,
+      "final_potential_energy": 0.00025473447621014733,
+      "num_bubbles": 3794,
+      "wall_seconds": 43.669288124991
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 0,
+      "final_total_energy": 0.0019103634366515756,
+      "final_kinetic_energy": 0.0007738898871355992,
+      "final_gradient_energy": 1.0984348942490844e-05,
+      "final_potential_energy": 0.0011254892005734855,
+      "num_bubbles": 3477,
+      "wall_seconds": 46.12140633400122
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 1,
+      "final_total_energy": 0.0019503136220692097,
+      "final_kinetic_energy": 0.00089079626825977,
+      "final_gradient_energy": 1.0805111418267103e-05,
+      "final_potential_energy": 0.0010487122423911725,
+      "num_bubbles": 3673,
+      "wall_seconds": 45.26917683400097
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 2,
+      "final_total_energy": 0.002004344359096218,
+      "final_kinetic_energy": 0.001013300765314941,
+      "final_gradient_energy": 1.0816113177272563e-05,
+      "final_potential_energy": 0.0009802274806040045,
+      "num_bubbles": 3932,
+      "wall_seconds": 45.517412957997294
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 3,
+      "final_total_energy": 0.00199865206319,
+      "final_kinetic_energy": 0.0008706171516383135,
+      "final_gradient_energy": 1.1142737757557161e-05,
+      "final_potential_energy": 0.0011168921737941292,
+      "num_bubbles": 3678,
+      "wall_seconds": 43.130135041006724
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "realization": 4,
+      "final_total_energy": 0.0019583696635953962,
+      "final_kinetic_energy": 0.0009287143987662106,
+      "final_gradient_energy": 1.0717359988596525e-05,
+      "final_potential_energy": 0.0010189379048405893,
+      "num_bubbles": 3794,
+      "wall_seconds": 44.68757995800115
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 0,
+      "final_total_energy": 0.004298297338185257,
+      "final_kinetic_energy": 0.001741244127022336,
+      "final_gradient_energy": 2.4714657469776404e-05,
+      "final_potential_energy": 0.0025323385536931446,
+      "num_bubbles": 3477,
+      "wall_seconds": 42.76839983300306
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 1,
+      "final_total_energy": 0.004388199641235943,
+      "final_kinetic_energy": 0.002004291437728632,
+      "final_gradient_energy": 2.4311449204722035e-05,
+      "final_potential_energy": 0.002359596754302589,
+      "num_bubbles": 3673,
+      "wall_seconds": 44.17554008300067
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 2,
+      "final_total_energy": 0.004509754001678558,
+      "final_kinetic_energy": 0.002279916048227509,
+      "final_gradient_energy": 2.433612982916127e-05,
+      "final_potential_energy": 0.0022055018236218876,
+      "num_bubbles": 3932,
+      "wall_seconds": 45.48223525000503
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 3,
+      "final_total_energy": 0.004496940718969966,
+      "final_kinetic_energy": 0.0019588756491319592,
+      "final_gradient_energy": 2.5071001474526973e-05,
+      "final_potential_energy": 0.002512994068363479,
+      "num_bubbles": 3678,
+      "wall_seconds": 44.88952608400723
+    },
+    {
+      "theta0": 2.356194490192345,
+      "realization": 4,
+      "final_total_energy": 0.0044063297048738525,
+      "final_kinetic_energy": 0.0020896092923129734,
+      "final_gradient_energy": 2.4114030350866473e-05,
+      "final_potential_energy": 0.002292606382210012,
+      "num_bubbles": 3794,
+      "wall_seconds": 43.97841325000627
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 0,
+      "final_total_energy": 0.007641453746606302,
+      "final_kinetic_energy": 0.0030955595485423967,
+      "final_gradient_energy": 4.3937395769963374e-05,
+      "final_potential_energy": 0.004501956802293942,
+      "num_bubbles": 3477,
+      "wall_seconds": 41.462863166991156
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 1,
+      "final_total_energy": 0.007801254488276839,
+      "final_kinetic_energy": 0.00356318507303908,
+      "final_gradient_energy": 4.322044567306841e-05,
+      "final_potential_energy": 0.00419484896956469,
+      "num_bubbles": 3673,
+      "wall_seconds": 42.49984079199203
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 2,
+      "final_total_energy": 0.008017377436384872,
+      "final_kinetic_energy": 0.004053203061259764,
+      "final_gradient_energy": 4.326445270909025e-05,
+      "final_potential_energy": 0.003920909922416018,
+      "num_bubbles": 3932,
+      "wall_seconds": 47.71173666699906
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 3,
+      "final_total_energy": 0.00799460825276,
+      "final_kinetic_energy": 0.003482468606553254,
+      "final_gradient_energy": 4.4570951030228644e-05,
+      "final_potential_energy": 0.004467568695176517,
+      "num_bubbles": 3678,
+      "wall_seconds": 45.796008874996915
+    },
+    {
+      "theta0": 3.141592653589793,
+      "realization": 4,
+      "final_total_energy": 0.007833478654381585,
+      "final_kinetic_energy": 0.0037148575950648422,
+      "final_gradient_energy": 4.28694399543861e-05,
+      "final_potential_energy": 0.004075751619362357,
+      "num_bubbles": 3794,
+      "wall_seconds": 45.92997150000883
+    }
+  ],
+  "per_theta_summary": [
+    {
+      "theta0": 0.0,
+      "mean_final_total_energy": 0.0,
+      "std_final_total_energy": 0.0,
+      "N_samples": 5
+    },
+    {
+      "theta0": 0.7853981633974483,
+      "mean_final_total_energy": 0.00049110215723012,
+      "std_final_total_energy": 8.604865239326866e-06,
+      "N_samples": 5
+    },
+    {
+      "theta0": 1.5707963267948966,
+      "mean_final_total_energy": 0.00196440862892048,
+      "std_final_total_energy": 3.4419460957307464e-05,
+      "N_samples": 5
+    },
+    {
+      "theta0": 2.356194490192345,
+      "mean_final_total_energy": 0.0044199042809887155,
+      "std_final_total_energy": 7.744067009193108e-05,
+      "N_samples": 5
+    },
+    {
+      "theta0": 3.141592653589793,
+      "mean_final_total_energy": 0.00785763451568192,
+      "std_final_total_energy": 0.00013767784382922986,
+      "N_samples": 5
+    }
+  ]
+}

@@ -10,7 +10,7 @@ Physics
 Solves the classical axion equation of motion on a 3D periodic lattice
 in a radiation-dominated FRW background:
 
-    θ'' + 2 H_conf θ' - ∇²θ + a² m²(τ,x) sin θ = 0
+    θ'' + 2 H_conf θ' - ∇²θ + a² m²(τ,x) θ = 0
 
 where primes denote conformal-time derivatives, H_conf = 1/τ is the
 conformal Hubble rate, and m²(τ,x) is the spatially varying mass field
@@ -44,7 +44,7 @@ Adjust `numba.set_num_threads` below to match your hardware.
 
 Usage
 -----
-    from axion_sim import create_simulation_pt_at_zero
+    from axion_harmonic import create_simulation_pt_at_zero
 
     sim, tau_final = create_simulation_pt_at_zero(
         H_PT=0.7, beta=5.6, start_time=0.0, end_time=10.0/0.7,
@@ -663,7 +663,8 @@ class EnergyCalculator:
         a_tau = self.field_evolver.cosmology.scale_factor(tau)
 
         kinetic_d  = 0.5 * theta_prime**2 / (a_tau**2 * self.m0**2)
-        potential_d = (mass_squared / self.m0**2) * (1 - np.cos(theta))
+        # Harmonic potential: V(θ) = (m^2/m0^2) * θ^2 / 2
+        potential_d = 0.5 * (mass_squared / self.m0**2) * (theta ** 2)
         gradient_d = (self._gradient_density_fft(theta, a_tau) if self.use_fft
                       else self._gradient_density_fd(theta, a_tau))
         total_d = kinetic_d + gradient_d + potential_d
@@ -761,7 +762,7 @@ class FieldEvolver:
         a       = self.cosmology.scale_factor(tau)
 
         accel = (self._laplacian(self.theta)
-                 - a**2 * mass_sq * np.sin(self.theta)
+                 - a**2 * mass_sq * self.theta
                  - 2.0 * H_conf * self.theta_prime)
 
         self.theta_prime += 0.5 * dtau * accel
@@ -774,7 +775,7 @@ class FieldEvolver:
         a_new       = self.cosmology.scale_factor(tau_new)
 
         accel_new = (self._laplacian(self.theta)
-                     - a_new**2 * mass_sq_new * np.sin(self.theta)
+                     - a_new**2 * mass_sq_new * self.theta
                      - 2.0 * H_conf_new * self.theta_prime)
 
         self.theta_prime += 0.5 * dtau * accel_new
