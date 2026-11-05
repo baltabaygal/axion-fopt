@@ -95,7 +95,7 @@ def main():
     parser.add_argument('--numba-threads-per-worker', type=int, default=1, help='Numba threads inside each worker')
     args = parser.parse_args()
 
-    out_dir = Path('/Users/baltabay/Desktop/miniclusters/axion-fopt/sim_core/cosine_sweep_results')
+    out_dir = Path('/Users/baltabay/Desktop/axions/axion-fopt/sim_core/cosine_sweep_results')
     out_dir.mkdir(parents=True, exist_ok=True)
 
     nopt_tasks, pt_tasks = build_tasks()

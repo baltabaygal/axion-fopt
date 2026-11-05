@@ -81,7 +81,7 @@ def run_sim(H_PT, beta_over_H, theta0, v_w, with_pt, seed):
 
 
 def main():
-    out_dir = Path('/Users/baltabay/Desktop/miniclusters/axion-fopt/sim_core/cosine_sweep_results')
+    out_dir = Path('/Users/baltabay/Desktop/axions/axion-fopt/sim_core/cosine_sweep_results')
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Build PT task list with mixed realizations

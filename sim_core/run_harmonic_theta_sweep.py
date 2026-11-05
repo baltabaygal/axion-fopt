@@ -54,7 +54,7 @@ def main():
 
     theta_vals = np.linspace(0.0, math.pi, n_theta)
 
-    out_dir = Path('/Users/baltabay/Desktop/miniclusters/axion-fopt/sim_core/harmonic_sweep_results')
+    out_dir = Path('/Users/baltabay/Desktop/axions/axion-fopt/sim_core/harmonic_sweep_results')
     out_dir.mkdir(parents=True, exist_ok=True)
 
     print('=' * 72)

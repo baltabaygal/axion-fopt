@@ -72,7 +72,7 @@ def main():
     theta_vals = np.linspace(0.0, math.pi, n_theta)
     end_time = 50.0 / H_PT
 
-    out_dir = Path('/Users/baltabay/Desktop/miniclusters/axion-fopt/sim_core/cosine_sweep_results')
+    out_dir = Path('/Users/baltabay/Desktop/axions/axion-fopt/sim_core/cosine_sweep_results')
     out_dir.mkdir(parents=True, exist_ok=True)
 
     rows = []
